@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8D6FE89174F5D4C009984D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D6FE88174F5D4C009984D8 /* UIKit.framework */; };
+		C8D6FE8B174F5D4C009984D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D6FE8A174F5D4C009984D8 /* Foundation.framework */; };
+		C8D6FE8D174F5D4C009984D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D6FE8C174F5D4C009984D8 /* CoreGraphics.framework */; };
+		C8D6FE93174F5D4C009984D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8D6FE91174F5D4C009984D8 /* InfoPlist.strings */; };
+		C8D6FE95174F5D4C009984D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FE94174F5D4C009984D8 /* main.m */; };
+		C8D6FE99174F5D4C009984D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FE98174F5D4C009984D8 /* AppDelegate.m */; };
+		C8D6FE9B174F5D4C009984D8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D6FE9A174F5D4C009984D8 /* Default.png */; };
+		C8D6FE9D174F5D4C009984D8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D6FE9C174F5D4C009984D8 /* Default@2x.png */; };
+		C8D6FE9F174F5D4C009984D8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D6FE9E174F5D4C009984D8 /* Default-568h@2x.png */; };
+		C8D6FEA2174F5D4C009984D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FEA1174F5D4C009984D8 /* ViewController.m */; };
+		C8D6FEA5174F5D4C009984D8 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D6FEA3174F5D4C009984D8 /* ViewController_iPhone.xib */; };
+		C8D6FEA8174F5D4C009984D8 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D6FEA6174F5D4C009984D8 /* ViewController_iPad.xib */; };
+		C8D6FEB4174F5E76009984D8 /* Avocarrot.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FEB3174F5E76009984D8 /* Avocarrot.m */; };
+		C8D6FEB7174F684D009984D8 /* Enhancement.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FEB6174F684D009984D8 /* Enhancement.m */; };
+		C8D6FED8174F8592009984D8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FECF174F8592009984D8 /* Reachability.m */; };
+		C8D6FED9174F8592009984D8 /* TSearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FED1174F8592009984D8 /* TSearchInfo.m */; };
+		C8D6FEDA174F8592009984D8 /* TWebApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FED3174F8592009984D8 /* TWebApi.m */; };
+		C8D6FEDB174F8592009984D8 /* TXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FED5174F8592009984D8 /* TXMLParser.m */; };
+		C8D6FEDC174F8592009984D8 /* WebApiController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6FED7174F8592009984D8 /* WebApiController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C8D6FE85174F5D4C009984D8 /* avocarrotsdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avocarrotsdk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D6FE88174F5D4C009984D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C8D6FE8A174F5D4C009984D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8D6FE8C174F5D4C009984D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C8D6FE90174F5D4C009984D8 /* avocarrotsdk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "avocarrotsdk-Info.plist"; sourceTree = "<group>"; };
+		C8D6FE92174F5D4C009984D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8D6FE94174F5D4C009984D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8D6FE96174F5D4C009984D8 /* avocarrotsdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "avocarrotsdk-Prefix.pch"; sourceTree = "<group>"; };
+		C8D6FE97174F5D4C009984D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C8D6FE98174F5D4C009984D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C8D6FE9A174F5D4C009984D8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C8D6FE9C174F5D4C009984D8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C8D6FE9E174F5D4C009984D8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C8D6FEA0174F5D4C009984D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C8D6FEA1174F5D4C009984D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C8D6FEA4174F5D4C009984D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		C8D6FEA7174F5D4C009984D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		C8D6FEB2174F5E76009984D8 /* Avocarrot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avocarrot.h; sourceTree = "<group>"; };
+		C8D6FEB3174F5E76009984D8 /* Avocarrot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avocarrot.m; sourceTree = "<group>"; };
+		C8D6FEB5174F684D009984D8 /* Enhancement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enhancement.h; sourceTree = "<group>"; };
+		C8D6FEB6174F684D009984D8 /* Enhancement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enhancement.m; sourceTree = "<group>"; };
+		C8D6FECE174F8592009984D8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C8D6FECF174F8592009984D8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C8D6FED0174F8592009984D8 /* TSearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSearchInfo.h; sourceTree = "<group>"; };
+		C8D6FED1174F8592009984D8 /* TSearchInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSearchInfo.m; sourceTree = "<group>"; };
+		C8D6FED2174F8592009984D8 /* TWebApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWebApi.h; sourceTree = "<group>"; };
+		C8D6FED3174F8592009984D8 /* TWebApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWebApi.m; sourceTree = "<group>"; };
+		C8D6FED4174F8592009984D8 /* TXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMLParser.h; sourceTree = "<group>"; };
+		C8D6FED5174F8592009984D8 /* TXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMLParser.m; sourceTree = "<group>"; };
+		C8D6FED6174F8592009984D8 /* WebApiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebApiController.h; sourceTree = "<group>"; };
+		C8D6FED7174F8592009984D8 /* WebApiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebApiController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8D6FE82174F5D4C009984D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D6FE89174F5D4C009984D8 /* UIKit.framework in Frameworks */,
+				C8D6FE8B174F5D4C009984D8 /* Foundation.framework in Frameworks */,
+				C8D6FE8D174F5D4C009984D8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8D6FE7C174F5D4C009984D8 = {
+			isa = PBXGroup;
+			children = (
+				C8D6FE8E174F5D4C009984D8 /* avocarrotsdk */,
+				C8D6FE87174F5D4C009984D8 /* Frameworks */,
+				C8D6FE86174F5D4C009984D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8D6FE86174F5D4C009984D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6FE85174F5D4C009984D8 /* avocarrotsdk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8D6FE87174F5D4C009984D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6FE88174F5D4C009984D8 /* UIKit.framework */,
+				C8D6FE8A174F5D4C009984D8 /* Foundation.framework */,
+				C8D6FE8C174F5D4C009984D8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D6FE8E174F5D4C009984D8 /* avocarrotsdk */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6FECC174F8592009984D8 /* HelperClass */,
+				C8D6FEAE174F5D76009984D8 /* Class */,
+				C8D6FE97174F5D4C009984D8 /* AppDelegate.h */,
+				C8D6FE98174F5D4C009984D8 /* AppDelegate.m */,
+				C8D6FEA0174F5D4C009984D8 /* ViewController.h */,
+				C8D6FEA1174F5D4C009984D8 /* ViewController.m */,
+				C8D6FEA3174F5D4C009984D8 /* ViewController_iPhone.xib */,
+				C8D6FEA6174F5D4C009984D8 /* ViewController_iPad.xib */,
+				C8D6FE8F174F5D4C009984D8 /* Supporting Files */,
+			);
+			path = avocarrotsdk;
+			sourceTree = "<group>";
+		};
+		C8D6FE8F174F5D4C009984D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6FE90174F5D4C009984D8 /* avocarrotsdk-Info.plist */,
+				C8D6FE91174F5D4C009984D8 /* InfoPlist.strings */,
+				C8D6FE94174F5D4C009984D8 /* main.m */,
+				C8D6FE96174F5D4C009984D8 /* avocarrotsdk-Prefix.pch */,
+				C8D6FE9A174F5D4C009984D8 /* Default.png */,
+				C8D6FE9C174F5D4C009984D8 /* Default@2x.png */,
+				C8D6FE9E174F5D4C009984D8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8D6FEAE174F5D76009984D8 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6FEB2174F5E76009984D8 /* Avocarrot.h */,
+				C8D6FEB3174F5E76009984D8 /* Avocarrot.m */,
+				C8D6FEB5174F684D009984D8 /* Enhancement.h */,
+				C8D6FEB6174F684D009984D8 /* Enhancement.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		C8D6FECC174F8592009984D8 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6FECD174F8592009984D8 /* Reachability */,
+				C8D6FED0174F8592009984D8 /* TSearchInfo.h */,
+				C8D6FED1174F8592009984D8 /* TSearchInfo.m */,
+				C8D6FED2174F8592009984D8 /* TWebApi.h */,
+				C8D6FED3174F8592009984D8 /* TWebApi.m */,
+				C8D6FED4174F8592009984D8 /* TXMLParser.h */,
+				C8D6FED5174F8592009984D8 /* TXMLParser.m */,
+				C8D6FED6174F8592009984D8 /* WebApiController.h */,
+				C8D6FED7174F8592009984D8 /* WebApiController.m */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		C8D6FECD174F8592009984D8 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6FECE174F8592009984D8 /* Reachability.h */,
+				C8D6FECF174F8592009984D8 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8D6FE84174F5D4C009984D8 /* avocarrotsdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8D6FEAB174F5D4C009984D8 /* Build configuration list for PBXNativeTarget "avocarrotsdk" */;
+			buildPhases = (
+				C8D6FE81174F5D4C009984D8 /* Sources */,
+				C8D6FE82174F5D4C009984D8 /* Frameworks */,
+				C8D6FE83174F5D4C009984D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = avocarrotsdk;
+			productName = avocarrotsdk;
+			productReference = C8D6FE85174F5D4C009984D8 /* avocarrotsdk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8D6FE7D174F5D4C009984D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ajeet Singh";
+			};
+			buildConfigurationList = C8D6FE80174F5D4C009984D8 /* Build configuration list for PBXProject "avocarrotsdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C8D6FE7C174F5D4C009984D8;
+			productRefGroup = C8D6FE86174F5D4C009984D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8D6FE84174F5D4C009984D8 /* avocarrotsdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8D6FE83174F5D4C009984D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D6FE93174F5D4C009984D8 /* InfoPlist.strings in Resources */,
+				C8D6FE9B174F5D4C009984D8 /* Default.png in Resources */,
+				C8D6FE9D174F5D4C009984D8 /* Default@2x.png in Resources */,
+				C8D6FE9F174F5D4C009984D8 /* Default-568h@2x.png in Resources */,
+				C8D6FEA5174F5D4C009984D8 /* ViewController_iPhone.xib in Resources */,
+				C8D6FEA8174F5D4C009984D8 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8D6FE81174F5D4C009984D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D6FE95174F5D4C009984D8 /* main.m in Sources */,
+				C8D6FE99174F5D4C009984D8 /* AppDelegate.m in Sources */,
+				C8D6FEA2174F5D4C009984D8 /* ViewController.m in Sources */,
+				C8D6FEB4174F5E76009984D8 /* Avocarrot.m in Sources */,
+				C8D6FEB7174F684D009984D8 /* Enhancement.m in Sources */,
+				C8D6FED8174F8592009984D8 /* Reachability.m in Sources */,
+				C8D6FED9174F8592009984D8 /* TSearchInfo.m in Sources */,
+				C8D6FEDA174F8592009984D8 /* TWebApi.m in Sources */,
+				C8D6FEDB174F8592009984D8 /* TXMLParser.m in Sources */,
+				C8D6FEDC174F8592009984D8 /* WebApiController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C8D6FE91174F5D4C009984D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D6FE92174F5D4C009984D8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C8D6FEA3174F5D4C009984D8 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D6FEA4174F5D4C009984D8 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C8D6FEA6174F5D4C009984D8 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8D6FEA7174F5D4C009984D8 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8D6FEA9174F5D4C009984D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8D6FEAA174F5D4C009984D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8D6FEAC174F5D4C009984D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "avocarrotsdk/avocarrotsdk-Prefix.pch";
+				INFOPLIST_FILE = "avocarrotsdk/avocarrotsdk-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C8D6FEAD174F5D4C009984D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "avocarrotsdk/avocarrotsdk-Prefix.pch";
+				INFOPLIST_FILE = "avocarrotsdk/avocarrotsdk-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8D6FE80174F5D4C009984D8 /* Build configuration list for PBXProject "avocarrotsdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D6FEA9174F5D4C009984D8 /* Debug */,
+				C8D6FEAA174F5D4C009984D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D6FEAB174F5D4C009984D8 /* Build configuration list for PBXNativeTarget "avocarrotsdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D6FEAC174F5D4C009984D8 /* Debug */,
+				C8D6FEAD174F5D4C009984D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8D6FE7D174F5D4C009984D8 /* Project object */;
+}
