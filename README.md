@@ -1,0 +1,4 @@
+AvocarrotIOSSDK
+===============
+
+Avocarrot iOS SDK
