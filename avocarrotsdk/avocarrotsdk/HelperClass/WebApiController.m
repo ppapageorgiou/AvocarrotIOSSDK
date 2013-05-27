@@ -33,6 +33,9 @@
     [webApi setParameter:[searchInfo generateParam]]; 
     [webApi runApiSuccessCallback:successCallback inDelegate:delegateObj];
 }
+
+
+
 - (void)callAPIWithImage:(NSString *)apiName WithImageParameter:(NSMutableDictionary *)Iparameter WithoutImageParameter:(NSMutableDictionary *)WIparameter SuccessCallback:(SEL)successCallback andDelegate:delegateObj{
    
     NSString *alias_api=[[NSString alloc] initWithString:apiName];
@@ -55,9 +58,16 @@
     [webApi setMethodName:[SERVERNAME stringByAppendingFormat:@"%@",apiName ]];
     [webApi setParameter:[searchInfo generateParam]];
     [webApi GET_runApiSuccessCallback:successCallback inDelegate:delegateObj];
-       
-    
-    
+ 
+}
+
+//chirag
+- (void)callAPIwithJSON_POST:(NSString *)apiName  json:(NSString *)json SuccessCallback:(SEL)successCallback andDelegate:delegateObj
+{
+    TWebApi *webApi = [[TWebApi alloc] init];
+    [webApi setMethodName:[SERVERNAME stringByAppendingFormat:@"%@",apiName ]];
+    [webApi setParameter:json];
+    [webApi passJSONApiSuccessCallback:successCallback inDelegate:delegateObj];
 }
 
 

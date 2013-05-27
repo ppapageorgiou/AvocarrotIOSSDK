@@ -37,6 +37,9 @@
 -(void)ForImageUploding_runApiSuccessCallback:(SEL)successSelectorfailSelector inDelegate:delegateObj WithImageParameter:(NSMutableDictionary *)Iparameter WithoutImageParameter:(NSMutableDictionary *)WIparameter;
 
 
+//chirag
+-(void)passJSONApiSuccessCallback:(SEL)successSelector inDelegate:delegateObj;
+
 
 -(NSString *)checkNetworkConnectivity;
 -(void)callNoNetworkAlert;

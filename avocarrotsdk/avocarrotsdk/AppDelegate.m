@@ -11,6 +11,8 @@
 #import "ViewController.h"
 
 @implementation AppDelegate
+@synthesize strDeviceToken;
+
 
 - (void)dealloc
 {
@@ -21,6 +23,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge
+     |UIRemoteNotificationTypeAlert
+     |UIRemoteNotificationTypeSound];
+
+    
+    
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -31,6 +41,32 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+
+
+#pragma mark - didRegisterForRemoteNotificationsWithDeviceToken
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+	// You can send here, for example, an asynchronous HTTP request to your web-server to store this deviceToken remotely.
+    
+	NSLog(@"Did register for remote notifications: %@", deviceToken);
+    
+    //   strDeviceToken = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    //   strDeviceToken = [strDeviceToken stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    //   strDeviceToken=[@"" stringByAppendingFormat:@"%@",strDeviceToken];
+    
+    [self setStrDeviceToken: [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]]];
+    [self setStrDeviceToken:[strDeviceToken stringByReplacingOccurrencesOfString:@" " withString:@""]];
+    //
+    //
+    //    strDeviceUDID=[@"" stringByAppendingFormat:@"%@",[[UIDevice currentDevice] uniqueIdentifier]];
+    //
+    //
+    //
+    NSLog(@"strDeviceToken %@",strDeviceToken);
+    //    NSLog(@"strDeviceUDID %@",strDeviceUDID);
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

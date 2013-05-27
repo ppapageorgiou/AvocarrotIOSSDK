@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C86D01EA1753699E00BB9D57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86D01E91753699E00BB9D57 /* SystemConfiguration.framework */; };
+		C86D01EE17536EE800BB9D57 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D01ED17536EE800BB9D57 /* SVProgressHUD.m */; };
+		C86D01F31753825C00BB9D57 /* StoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D01F21753825C00BB9D57 /* StoryObject.m */; };
 		C8D6FE89174F5D4C009984D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D6FE88174F5D4C009984D8 /* UIKit.framework */; };
 		C8D6FE8B174F5D4C009984D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D6FE8A174F5D4C009984D8 /* Foundation.framework */; };
 		C8D6FE8D174F5D4C009984D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D6FE8C174F5D4C009984D8 /* CoreGraphics.framework */; };
@@ -29,6 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C86D01E91753699E00BB9D57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C86D01EC17536EE800BB9D57 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		C86D01ED17536EE800BB9D57 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		C86D01EF17536F2A00BB9D57 /* constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
+		C86D01F11753825C00BB9D57 /* StoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryObject.h; sourceTree = "<group>"; };
+		C86D01F21753825C00BB9D57 /* StoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryObject.m; sourceTree = "<group>"; };
 		C8D6FE85174F5D4C009984D8 /* avocarrotsdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avocarrotsdk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D6FE88174F5D4C009984D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C8D6FE8A174F5D4C009984D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86D01EA1753699E00BB9D57 /* SystemConfiguration.framework in Frameworks */,
 				C8D6FE89174F5D4C009984D8 /* UIKit.framework in Frameworks */,
 				C8D6FE8B174F5D4C009984D8 /* Foundation.framework in Frameworks */,
 				C8D6FE8D174F5D4C009984D8 /* CoreGraphics.framework in Frameworks */,
@@ -76,9 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C86D01EB17536EE800BB9D57 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C86D01EC17536EE800BB9D57 /* SVProgressHUD.h */,
+				C86D01ED17536EE800BB9D57 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		C8D6FE7C174F5D4C009984D8 = {
 			isa = PBXGroup;
 			children = (
+				C86D01E91753699E00BB9D57 /* SystemConfiguration.framework */,
 				C8D6FE8E174F5D4C009984D8 /* avocarrotsdk */,
 				C8D6FE87174F5D4C009984D8 /* Frameworks */,
 				C8D6FE86174F5D4C009984D8 /* Products */,
@@ -106,6 +126,7 @@
 		C8D6FE8E174F5D4C009984D8 /* avocarrotsdk */ = {
 			isa = PBXGroup;
 			children = (
+				C86D01EB17536EE800BB9D57 /* SVProgressHUD */,
 				C8D6FECC174F8592009984D8 /* HelperClass */,
 				C8D6FEAE174F5D76009984D8 /* Class */,
 				C8D6FE97174F5D4C009984D8 /* AppDelegate.h */,
@@ -136,10 +157,13 @@
 		C8D6FEAE174F5D76009984D8 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C86D01EF17536F2A00BB9D57 /* constant.h */,
 				C8D6FEB2174F5E76009984D8 /* Avocarrot.h */,
 				C8D6FEB3174F5E76009984D8 /* Avocarrot.m */,
 				C8D6FEB5174F684D009984D8 /* Enhancement.h */,
 				C8D6FEB6174F684D009984D8 /* Enhancement.m */,
+				C86D01F11753825C00BB9D57 /* StoryObject.h */,
+				C86D01F21753825C00BB9D57 /* StoryObject.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -246,6 +270,8 @@
 				C8D6FEDA174F8592009984D8 /* TWebApi.m in Sources */,
 				C8D6FEDB174F8592009984D8 /* TXMLParser.m in Sources */,
 				C8D6FEDC174F8592009984D8 /* WebApiController.m in Sources */,
+				C86D01EE17536EE800BB9D57 /* SVProgressHUD.m in Sources */,
+				C86D01F31753825C00BB9D57 /* StoryObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +402,7 @@
 				C8D6FEAD174F5D4C009984D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

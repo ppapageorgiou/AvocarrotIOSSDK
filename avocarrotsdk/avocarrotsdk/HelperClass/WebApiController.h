@@ -11,7 +11,9 @@
 #import "Reachability.h"
 #import "TSearchInfo.h"
 
-#define SERVERNAME                     @"http://localhost/LACommon/"
+
+//#define StoryURL @"http://dev.avocarrot.com/api/v1/stories/?api_key="
+//#define ClaimURL @"http://dev.avocarrot.com/api/v1/claims/?api_key="
 
 
 
@@ -20,6 +22,8 @@
 
 + (Reachability *) checkServerConnection;
 - (void)callAPI_POST:(NSString *)apiName  andParams:(NSDictionary *)params SuccessCallback:(SEL)successCallback andDelegate:delegateObj ;
+
+- (void)callAPIwithJSON_POST:(NSString *)apiName  json:(NSString *)json SuccessCallback:(SEL)successCallback andDelegate:delegateObj ;
 
 - (void)callAPIWithImage:(NSString *)apiName WithImageParameter:(NSMutableDictionary *)Iparameter WithoutImageParameter:(NSMutableDictionary *)WIparameter SuccessCallback:(SEL)successCallback andDelegate:delegateObj ;
 

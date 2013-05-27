@@ -8,7 +8,6 @@
 
 #import "TWebApi.h"
 #import "Reachability.h"
-#import "SVProgressHUD.h"
 
 @implementation TWebApi
 @synthesize MethodName,Parameter;
@@ -31,6 +30,73 @@
 	return self;
 }
 
+-(void)passJSONApiSuccessCallback:(SEL)successSelector inDelegate:delegateObj {
+    @try {
+        
+        NSLog(@"WEBAPI: Running web api: %@", MethodName);
+        if (m_data) {
+            [m_data release]; m_data = nil;
+        }
+        NSLog(@"%@ %@",Parameter,MethodName);
+        
+        
+        
+        
+        NSURL *_url = [NSURL URLWithString:[MethodName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        
+        NSLog(@"%@",_url);
+        
+        
+        
+        NSMutableURLRequest *_request = [[NSMutableURLRequest alloc] init];
+        [_request setURL:[NSURL URLWithString:@"http://dev.avocarrot.com/api/v1/stories/?api_key=680bd81b98b905e71b102883289c1bab848fd918"]];
+        [_request setHTTPMethod:@"POST"];
+        [_request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [_request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        [_request setHTTPBody:[Parameter dataUsingEncoding:NSUTF8StringEncoding]];
+
+        
+        
+//        NSMutableURLRequest *_request = [NSMutableURLRequest requestWithURL:_url];
+//        [_request setTimeoutInterval:239];
+//        // [_request addValue:@"text/plain; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+//        [_request addValue:[[NSString alloc] initWithFormat:@"%d",[Parameter length]] forHTTPHeaderField:@"Content-length"];
+//        [_request setHTTPMethod:@"POST"];
+//        [_request setHTTPBody:[Parameter dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        
+        // Web Service Logic
+        NSString *netStr = [self checkNetworkConnectivity];
+        if([netStr isEqualToString:@"NoAccess"])
+        {
+            NSMutableDictionary *respData = [[NSMutableDictionary alloc] init];
+            [respData setObject:@"No Network Found!" forKey:@"data"];
+            NSLog(@"INTERNET CONNECTION NOT AVAILABLE");
+            
+            [self msgInternetAvaible];
+            
+            
+            //            [delegateObj performSelector:failSelector withObject:m_apiAlias withObject:respData];
+        }
+        else
+        {
+            m_con = [NSURLConnection connectionWithRequest:_request delegate:self];
+            
+            m_data = [[NSMutableData alloc] init];
+            m_delegate = delegateObj;
+            m_successCallback = successSelector;
+            //            m_errorCallback = errorSelector;
+            //            m_failCallback = failSelector;
+            
+        }
+    }
+    @catch (NSException *exception) {
+        NSLog(@"ERROR IN runApiSuccessCallback WEBAPI");
+    }
+    @finally {
+    }
+    
+}
 -(void)runApiSuccessCallback:(SEL)successSelector inDelegate:delegateObj {
     @try {
         
@@ -235,7 +301,6 @@
 
 -(void)msgInternetAvaible
 {
-    [SVProgressHUD showSuccessWithStatus:@"Internet Not Available!"];
 }
 
 -(void) alloc {
@@ -332,7 +397,6 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     @try {
-        [SVProgressHUD dismiss];
         
         NSLog(@"WEBAPI: Error occured. Errorcode:%@", [error localizedDescription]);
         if (!m_failCallback || !m_delegate) return;

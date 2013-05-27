@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSMutableData *m_data;
+}
 
+- (IBAction)btnWithLook_clicked:(id)sender;
+- (IBAction)btnIFeelLucky_clicked:(id)sender;
 @end

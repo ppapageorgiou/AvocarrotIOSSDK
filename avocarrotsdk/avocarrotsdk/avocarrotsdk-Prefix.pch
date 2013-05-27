@@ -11,4 +11,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "constant.h"
+
+
+#define AppObj (AppDelegate *)[[UIApplication sharedApplication] delegate]
+
+
 #endif
