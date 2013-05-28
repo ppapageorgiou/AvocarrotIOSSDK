@@ -9,8 +9,21 @@
 #import "Enhancement.h"
 
 @implementation Enhancement
+@synthesize mStatusCode;
+@synthesize mEnhancementType;
+@synthesize enhancementid;
+@synthesize provider;
+@synthesize headline;
+@synthesize image;
 
 
 
+-(Boolean)isEmpty
+{
+    if(mStatusCode==0)
+        return YES;
+    else
+        return NO;
+}
 
 @end

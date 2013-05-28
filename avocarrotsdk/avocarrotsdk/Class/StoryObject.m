@@ -63,6 +63,14 @@
     [self.mObjectProperties setValue:[@""stringByAppendingFormat:@"%@",val] forKey:key];
 }
 
+-(Boolean)hasProperties
+{
+    if(mObjectProperties==nil)
+        return NO;
+    else
+        return YES;
+}
+
 -(NSDictionary*)toJSON
 {
     NSDictionary *finalDic = [NSDictionary dictionaryWithObjectsAndKeys:mObjectName, @"name",mObjectProperties, @"properties",nil];

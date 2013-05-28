@@ -26,6 +26,7 @@
 
 
 -(NSDictionary*)toJSON;
+-(Boolean)hasProperties;
 
 
 @end
