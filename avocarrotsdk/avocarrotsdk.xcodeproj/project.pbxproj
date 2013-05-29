@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8368A40175606FA007EE0B0 /* Amazon-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8368A3F175606FA007EE0B0 /* Amazon-logo.jpg */; };
 		C86D01EA1753699E00BB9D57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86D01E91753699E00BB9D57 /* SystemConfiguration.framework */; };
 		C86D01EE17536EE800BB9D57 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D01ED17536EE800BB9D57 /* SVProgressHUD.m */; };
 		C86D01F31753825C00BB9D57 /* StoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D01F21753825C00BB9D57 /* StoryObject.m */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8368A3F175606FA007EE0B0 /* Amazon-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amazon-logo.jpg"; sourceTree = "<group>"; };
 		C86D01E91753699E00BB9D57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C86D01EC17536EE800BB9D57 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		C86D01ED17536EE800BB9D57 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		C8D6FE8E174F5D4C009984D8 /* avocarrotsdk */ = {
 			isa = PBXGroup;
 			children = (
+				C8368A3F175606FA007EE0B0 /* Amazon-logo.jpg */,
 				C86D01EB17536EE800BB9D57 /* SVProgressHUD */,
 				C8D6FECC174F8592009984D8 /* HelperClass */,
 				C8D6FEAE174F5D76009984D8 /* Class */,
@@ -246,6 +249,7 @@
 				C8D6FE9D174F5D4C009984D8 /* Default@2x.png in Resources */,
 				C8D6FE9F174F5D4C009984D8 /* Default-568h@2x.png in Resources */,
 				C8D6FEA5174F5D4C009984D8 /* ViewController_iPhone.xib in Resources */,
+				C8368A40175606FA007EE0B0 /* Amazon-logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

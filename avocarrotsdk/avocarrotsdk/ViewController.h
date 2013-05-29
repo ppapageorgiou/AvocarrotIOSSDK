@@ -12,7 +12,12 @@
 {
     NSMutableData *m_data;
 }
+@property (retain, nonatomic) IBOutlet UITextField *txtEmail;
 
+@property (retain, nonatomic) IBOutlet UIView *viewPopup;
 - (IBAction)btnWithLook_clicked:(id)sender;
 - (IBAction)btnIFeelLucky_clicked:(id)sender;
+- (IBAction)btnPopup_clicked:(id)sender;
+- (IBAction)btnClosepopup_clicked:(id)sender;
+- (IBAction)btnRedeem_clicked:(id)sender;
 @end
