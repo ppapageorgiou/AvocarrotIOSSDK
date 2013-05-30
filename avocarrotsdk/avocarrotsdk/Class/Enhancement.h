@@ -16,6 +16,9 @@
 @property (nonatomic,retain) NSString *provider;
 @property (nonatomic,retain) NSString *headline;
 @property (nonatomic,retain) NSString *image;
+@property (nonatomic,retain) NSString *campaign;
+@property (nonatomic,retain) NSString *resourceUri;
+
 
 
 

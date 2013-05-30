@@ -99,7 +99,7 @@
 					</object>
 					<object class="IBUIButton" id="750698126">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{124, 402}, {73, 44}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
@@ -163,7 +163,7 @@
 						<string key="NSFrameSize">{320, 568}</string>
 						<reference key="NSSuperview" ref="842892761"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1006420443"/>
+						<reference key="NSNextKeyView" ref="699658209"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -182,7 +182,7 @@
 								<string key="NSFrame">{{5, 3}, {254, 21}}</string>
 								<reference key="NSSuperview" ref="699658209"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="852170825"/>
+								<reference key="NSNextKeyView" ref="1033336987"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -216,14 +216,14 @@
 								<string key="NSFrame">{{6, 24}, {241, 21}}</string>
 								<reference key="NSSuperview" ref="699658209"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="937681396"/>
+								<reference key="NSNextKeyView" ref="852170825"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">$3 on Amazon GIft Card</string>
+								<string key="IBUIText"/>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -264,10 +264,6 @@
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Amazon-logo.jpg</string>
-						</object>
 					</object>
 					<object class="IBUIView" id="598347559">
 						<reference key="NSNextResponder" ref="842892761"/>
@@ -279,7 +275,7 @@
 								<string key="NSFrame">{{8, 7}, {188, 30}}</string>
 								<reference key="NSSuperview" ref="598347559"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="693750514"/>
+								<reference key="NSNextKeyView" ref="1006420443"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -348,7 +344,7 @@
 						<string key="NSFrame">{{272, 44}, {38, 28}}</string>
 						<reference key="NSSuperview" ref="842892761"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1033336987"/>
+						<reference key="NSNextKeyView" ref="937681396"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -375,7 +371,7 @@
 				<string key="NSFrameSize">{320, 568}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="699658209"/>
+				<reference key="NSNextKeyView" ref="693750514"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -413,6 +409,22 @@
 						<reference key="destination" ref="982510004"/>
 					</object>
 					<int key="connectionID">33</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">lblGiftTitle</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1033336987"/>
+					</object>
+					<int key="connectionID">34</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">imgGift</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="937681396"/>
+					</object>
+					<int key="connectionID">35</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -605,7 +617,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">33</int>
+			<int key="maxID">35</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -642,10 +654,20 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="imgGift">UIImageView</string>
+						<string key="lblGiftTitle">UILabel</string>
 						<string key="txtEmail">UITextField</string>
 						<string key="viewPopup">UIView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="imgGift">
+							<string key="name">imgGift</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="lblGiftTitle">
+							<string key="name">lblGiftTitle</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="txtEmail">
 							<string key="name">txtEmail</string>
 							<string key="candidateClassName">UITextField</string>
@@ -666,10 +688,6 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">Amazon-logo.jpg</string>
-			<string key="NS.object.0">{550, 320}</string>
-		</object>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
 </archive>

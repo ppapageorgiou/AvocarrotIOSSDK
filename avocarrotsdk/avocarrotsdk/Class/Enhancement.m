@@ -15,7 +15,8 @@
 @synthesize provider;
 @synthesize headline;
 @synthesize image;
-
+@synthesize campaign;
+@synthesize resourceUri;
 
 
 -(Boolean)isEmpty
